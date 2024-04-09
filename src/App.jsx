@@ -3,7 +3,6 @@ import { Canvas } from '@react-three/fiber'
 import { Stats } from '@react-three/drei'
 import Scene from './components/Scene.jsx';
 import LoadingMesh from './components/LoadingMesh.jsx';
-import { Landing } from './components/Landing.jsx';
 
 
 function App() {

@@ -14,7 +14,11 @@ export default {
             normal: "10s",
             slow: "20s",
     },
-    extend: { },
+    extend: {
+      colors: {
+        'regal-blue': '#243c5a',
+      },
+    },
   },
   plugins: [require("daisyui"),require("@designbycode/tailwindcss-text-glitch")],
 }
