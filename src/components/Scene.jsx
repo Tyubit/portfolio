@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { useNavigate } from "react-router-dom";
 import { PresentationControls, Html,PerspectiveCamera } from '@react-three/drei';
 import Model from '../Model.jsx'
 import CameraPositionLogger from '../utils/CameraPositionLogger.jsx';
@@ -12,7 +11,6 @@ const Scene = () => {
     function handleWindowSizeChange() {
         setWidth(window.innerWidth);
     }
-
     const scaleModel = width <= 768 ? [0.7, 0.7, 0.7] : [1, 1, 1];
     const phoneCamera = width <= 768 ? 3 : 2.5;
     const handleClick = () => {

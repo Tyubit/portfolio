@@ -9,9 +9,8 @@ function App() {
   return (
     <div className=' h-screen w-screen'>
       <Canvas className='touch-none' linear flat>
-        <ambientLight intensity={0.1} color={"#342766"}/>
         {/*performance monitoring*/}
-        <Stats />
+        {/* <Stats /> */}
         {/*loading mesh*/}
         <Suspense fallback={<LoadingMesh />}>
           <Scene/>

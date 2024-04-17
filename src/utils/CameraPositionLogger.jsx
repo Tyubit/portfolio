@@ -9,7 +9,7 @@ function CameraPositionLogger({event} = {}) {
         const logCameraPosition = () => {
             const { x, y, z } = cameraPosition.current.position;
 
-            console.log(`Camera position: x: ${x}, y: ${y}, z: ${z}`, cameraPosition.current);
+            // console.log(`Camera position: x: ${x}, y: ${y}, z: ${z}`, cameraPosition.current);
         };
         cameraPosition.current = camera;
         window.addEventListener(event, logCameraPosition);
