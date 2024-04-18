@@ -4,7 +4,6 @@ import { FaGitlab } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { credentials } from '../../assets/assets';
 const Footer = () => {
-  console.log(credentials.gitHub)
   return (
     <footer className="footer items-center p-4 bg-yellow-400 text-black flex justify-between">
   <aside className="items-center grid-flow-col">

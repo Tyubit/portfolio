@@ -1,19 +1,6 @@
-import React,{useRef} from 'react'
-import { Link as ScrollLink } from "react-scroll";
-import * as Scroll from "react-scroll";
+import React from 'react'
 
 const Navbar = () => {
-  const scroller = Scroll.scroller;
-
-  const goToPageAndScroll = async (selector) => {
-    await navigate("/");
-    await scroller.scrollTo(selector, {
-      duration: 500,
-      smooth: true,
-      offset: -75,
-      spy: true
-    });
-  };
 
   return (
   <header className='flex items-center justify-between p-1 bg-yellow-400 text-black font-bold md:px-[100px]'>

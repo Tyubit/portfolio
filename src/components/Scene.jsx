@@ -31,11 +31,13 @@ const Scene = () => {
     }, []);
 return (
     <>
-        <Html className={`fixed w-full flex flex-col justify-center items-center ${width <= 535 ? "left-10" : ""} `}>
-            <button className={`bg-yellow-300 hover:bg-purple-700 text-black btn btn-block px-14 ${width <= 1450 ? " text-2xl h-[60px] w-[200px]" : "h-[50px] w-[150px]" }`} onClick={handleClick}>
-            Start
-            </button>
-            <p className='w-[365px] text-white'>*For better experience use fullscreen on pc browser</p>
+        <Html>
+            <div className='w-[20px] flex flex-col justify-center items-center'>
+                <button className='bg-yellow-500 text-black px-[30px] py-[10px]' onClick={handleClick}>
+                Start
+                </button>
+                <p className='w-[365px] text-white'>*For better experience use fullscreen on pc browser</p>
+            </div>
         </Html>
         <PerspectiveCamera makeDefault={true} dpr={[1, 2]}  position= {[-1.6, 0.8, 1.6]} fov= {45} far= {6}rotation= {[-0.3, -0.8, -0.2]} />
         <PresentationControls  speed={1} zoom={0.5} global = {true} polar={[0, 0]} azimuth={[-Math.PI / phoneCamera, Math.PI /2.5]} cursor={false}>
