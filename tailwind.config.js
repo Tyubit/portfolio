@@ -10,15 +10,11 @@ export default {
   theme: {
     //glitch
     duration: {
-            fast: "1s",
-            normal: "10s",
-            slow: "20s",
+      fast: "1s",
+      normal: "10s",
+      slow: "20s",
     },
-    extend: {
-      colors: {
-        'regal-blue': '#243c5a',
-      },
-    },
+    extend: {},
   },
-  plugins: [require("daisyui"),require("@designbycode/tailwindcss-text-glitch")],
+  plugins: [require("daisyui"), require("@designbycode/tailwindcss-text-glitch")],
 }

@@ -6,6 +6,8 @@ import{useRef,useEffect} from "react";
 import {useGLTF, useTexture, useVideoTexture, PerspectiveCamera, useAnimations, Html, Decal} from "@react-three/drei";
 import * as THREE from "three";
 import BrowserUI from "./components/BrowserUI";
+import Test from "./components/test";
+import Website from "./components/Website";
 
 export default function Model(props) {
   const group = useRef()
@@ -2406,8 +2408,6 @@ export default function Model(props) {
         </mesh>
         <mesh
           name="main_monitor_screen"
-          castShadow
-          receiveShadow
           geometry={nodes.main_monitor_screen.geometry}
           material={deskTextureMaterial}
         >
@@ -2416,17 +2416,20 @@ export default function Model(props) {
             transform
             rotation={[0, Math.PI, 0]}
             distanceFactor={0.1}
-            occlude="blending">
+            occlude="blending"
+            >
             <BrowserUI className="w-[1995px] h-[40px]" setCamera={props.setClicked} />
           </Html>
           <Html
-            position={[-0.124, 0.555, 0.875]}
+            position={[-0.124, 0.554, 0.875]}
             transform
             rotation={[0, Math.PI, 0]}
             distanceFactor={0.1}
             occlude="blending"
+            wrapperClass="website"
           >
-            <iframe target="_blank" src="https://portfolio-inner-6kpn.vercel.app/" className="w-[1990px] h-[1120px]"></iframe>
+            <Website />
+            {/* <iframe target="_blank" src="https://portfolio-inner-6kpn.vercel.app/" className="w-[1990px] h-[1120px]"></iframe> */}
           </Html>
         </mesh>
         <mesh
