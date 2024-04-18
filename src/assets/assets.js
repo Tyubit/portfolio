@@ -3,6 +3,7 @@ import calc from "../assets/calc.png";
 import todoapp from "../assets/todoapp.png";
 import portfolio from "../assets/port.jpg";
 import sup from "../assets/sup.jpg";
+import ip from "../assets/ip.jpg";
 
 //skill-level
 const tech = {
@@ -47,8 +48,8 @@ const projects = [
     {
         "title": "ip finder",
         "tags": "React, HTML, SCSS,Vite,Git",
-        "link": "",
-        "preview": ""
+        "link": "https://ip-tracker-seven-rho.vercel.app/",
+        "preview": ip
     },
     {
         "title": "Sup chat app",

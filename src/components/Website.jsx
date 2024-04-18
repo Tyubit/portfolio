@@ -1,5 +1,4 @@
-import React, { useRef } from 'react'
-import { BrowserRouter,Routes, Route,Link } from 'react-router-dom'
+
 import Navbar from './web_components/Navbar'
 import Hero from './web_components/Hero'
 import About from './web_components/About'

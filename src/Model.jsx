@@ -6,7 +6,6 @@ import{useRef,useEffect} from "react";
 import {useGLTF, useTexture, useVideoTexture, PerspectiveCamera, useAnimations, Html, Decal} from "@react-three/drei";
 import * as THREE from "three";
 import BrowserUI from "./components/BrowserUI";
-import Test from "./components/test";
 import Website from "./components/Website";
 
 export default function Model(props) {
