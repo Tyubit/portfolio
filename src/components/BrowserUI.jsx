@@ -5,7 +5,7 @@ import { BsArrowsFullscreen } from "react-icons/bs";
 const BrowserUI = ({ setCamera }) => {
 
   const handleFullScreen = () => {
-    window.open("https://landing.elikov.dev/", "_self") 
+    window.open("https://landing.elikov.dev", "_self") 
   }
 
   const handleClose = () => {

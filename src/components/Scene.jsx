@@ -15,7 +15,7 @@ const Scene = () => {
     const phoneCamera = width <= 768 ? 3 : 2.5;
     const handleClick = () => {
         if(width <= 768){    
-            window.open("https://landing.elikov.dev/", "_self");
+            window.open("https://landing.elikov.dev", "_self");
             return;
         } 
 

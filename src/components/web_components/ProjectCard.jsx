@@ -9,7 +9,7 @@ const ProjectCard = ({ title, tags, preview,link}) => {
 
   return (
       <div id="projects" className='flex flex-col justify-center items-center cursor-pointer transform hover:scale-110 transition-transform duration-300' onClick={() => {handleClick(link)}}>
-        <img src={preview ? preview : previewDef} alt="" className='w-full'/>
+        <img src={preview ? preview : previewDef} alt="preview" className='w-full' loading="lazy"/>
         <h3 className='uppercase font-bold'>{title}</h3>
         <span>{tags}</span>
     </div>
