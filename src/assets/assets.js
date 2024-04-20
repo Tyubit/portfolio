@@ -40,7 +40,7 @@ const projects = [
         "preview": calc
     },
     {
-        "title": "Bill Splitte",
+        "title": "Todo App",
         "tags": "React, HTML, SCSS,Vite,Git",
         "link": "https://todo-p6w6k72nt-tyubit.vercel.app/",
         "preview": todoapp
