@@ -76,7 +76,7 @@ const experiences = [
 const credentials = {
     gitHub: "https://github.com/Tyubit",
     gitLab: "https://gitlab.com/Tuybit",
-    linkedIn: "https://www.linkedin.com/in/elisha-kovalev/",
+    linkedIn: "https://www.linkedin.com/in/yelissey-kovalev-555868305/",
 }
 
 export { tech, projects, credentials };
